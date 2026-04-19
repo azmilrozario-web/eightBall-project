@@ -21,6 +21,32 @@
   margin-bottom: 1rem;
 }
 
+button {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent */
+  backdrop-filter: blur(10px); /* The frosted glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 12px 25px;
+  color: black;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth hover transition */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Hover effect */
+button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px); /* Lifts the button slightly */
+  box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.45);
+}
+
+/* Click effect */
+button:active {
+  transform: translateY(1px); /* Pushes down when clicked */
+}
+
+
 /* Shake animation */
 .shake {
 /* This tells the browser to run a sequence named shakeBall by turning the Shake animation on in index.js. It lasts for 0.5 seconds and uses ease-in-out to make the movement feel smooth (starting and ending slightly slower). */
